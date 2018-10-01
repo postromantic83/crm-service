@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: appRoute
+spec:
+  port:
+    port: 80
+    targetPort: 8080
+  to:
+    kind: Service
+    name: appService
